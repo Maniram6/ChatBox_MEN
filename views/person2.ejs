@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <form action="/p2/response" method="post">
+            <input type="text" name="response" class="response">
+            <input type="submit" value="📩" class="sendMessage">
+        </form>
+    </div>
+
+    <div class="chat">
+        <% messages.forEach((n) => { %>
+        <p><%= n %></p>
+        <% }) %>
+    </div>
+</body>
+</html>
